@@ -1,0 +1,1125 @@
+.Welcome-signup {
+    position: absolute;
+    top: 4%;
+    align-content: center;
+    left: 25%;
+    height: 49px;
+    width: 252px;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: 600;
+    color: #6a00b1;
+    text-align: center;
+}
+.artboard .stackedgroup .rectangle6 {
+    background-color    : rgba(234, 234, 234, 1.0);
+    box-sizing          : border-box;
+    position            : relative;
+    height              : 52px;
+    margin              : 0;
+    width               : 522px;
+    border-style        : solid;
+    border-width        : 1px;
+    border-color        : rgba(150, 150, 150, 1.0);
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.cardoutline-SignUp {
+    background-color: white;
+    position: absolute;
+    top: 22.7%;
+    left: 35%;
+    height: 75%;
+    width: 40em;
+    opacity: 100;
+    box-shadow: 0px 2px 8px #888888;
+}
+
+
+.bgImg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+.bgImg2 {
+    position: absolute;
+    left: 19%;
+    height: 20%;
+    width: 40%;
+    z-index: -1;
+    background-size: 100% 100%;
+}
+
+.bgImgHome {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+.cardoutline {
+    background-color: white;
+    position: absolute;
+    top: 24.7%;
+    left: 40%;
+    height: 30em;
+    width: 25em;
+    opacity: 100;
+    box-shadow: 0px 2px 8px #888888;
+}
+.Welcome {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    height: 49px;
+    width: 252px;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: 600;
+    color: #6a00b1;
+    text-align: center;
+}
+.Top-Alert{
+    position: absolute;
+    top:0%;
+    width: 100%;
+    height:3%;
+    left: 0px;
+    right: 0px;
+    z-index: +2;
+}
+.emailbox {
+    position: absolute;
+    top: 115px;
+    left: 35px;
+    height: 50px;
+    width: 291px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(155, 155, 155, 1);
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.passwordbox {
+    position: absolute;
+    top: 200px;
+    left: 35px;
+    height: 50px;
+    width: 291px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(155, 155, 155, 1);
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.Login-btn {
+    position: absolute;
+    top: 290px;
+    left: 90px;
+    height: 50px;
+    width: 180px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid #6a00b1;
+    border-radius: 9px;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 600;
+    color: #6a00b1;
+}
+.start-btn {
+    position: absolute;
+    top: 60%;
+    left: 36%;
+    height: 10%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid #6a00b1;
+    border-radius: 9px;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 600;
+    color: #6a00b1;
+}
+
+
+.Logo-Welcome {
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    height: 140px;
+    width: 150px;
+}
+
+.Table-data-enriched{
+    position: absolute;
+    top:25%;
+    width:60%;
+    margin-left: 2%;
+}
+.News-Dashlet{
+    position: absolute;
+    top:14%;
+    width:60%;
+    margin-left:60%;
+}
+
+/*.vl{*/
+    /*border-left: 6px #6a00b1;*/
+    /*height: 500px;*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*margin-left: -3px;*/
+    /*top: 10%;*/
+/*}*/
+
+.boxed{
+    /*position:absolute;*/
+    /*left:62%;*/
+    height: 90%;
+    width: 35%;
+    /*top:5%;*/
+  }
+
+.rectangle{
+    /*position:absolute;*/
+    /*top: 0;*/
+    height: 5%;
+    width: 100%;
+    background-color: gray;
+}
+
+/*---------------------------------------Welcome.js--------------------------------------*/
+
+
+@font-face {
+    font-family: "ComicSansMS-Bold";
+    src: url('Comic Sans MS Bold.ttf') format("truetype");
+}
+
+.artboard {
+    width               : 100%;
+    min-width           : 1283px;
+    height              : 100vh;
+    min-height          : 1000px;
+    position            : relative;
+    overflow            : hidden;
+    margin              : 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color    : rgba(253, 253, 253, 1.0);
+}
+a {
+    text-decoration     : none;
+}
+div {
+    -webkit-text-size-adjust: none;
+}
+.anima-full-width-a {
+    width               : 100%;
+}
+.anima-full-height-a {
+    height              : 100%;
+}
+div {
+    -webkit-text-size-adjust: none;
+}
+.artboard .line {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 55px;
+    height              : 2px;
+    width               : 1281px;
+    position            : absolute;
+    margin              : 0;
+    left                : -1px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .line2 {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 127px;
+    height              : 1px;
+    width               : 1364px;
+    position            : absolute;
+    margin              : 0;
+    left                : -83px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .line3 {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 55px;
+    height              : 859px;
+    width               : 1px;
+    position            : absolute;
+    margin              : 0;
+    left                : 648px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .stackedgroup {
+    display             : flex;
+    justify-content     : flex-start;
+    flex-direction      : column;
+    align-items         : flex-end;
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 145px;
+    height              : auto;
+    width               : 522px;
+    position            : absolute;
+    margin              : 0;
+    left                : 667px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .stackedgroup .rectangle5 {
+    background-color    : rgba(234, 234, 234, 1.0);
+    box-sizing          : border-box;
+    position            : relative;
+    height              : 52px;
+    margin              : 0;
+    width               : 522px;
+    border-style        : solid;
+    border-width        : 1px;
+    border-color        : rgba(150, 150, 150, 1.0);
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .rectangle {
+    background-color    : rgba(255, 255, 255, 1.0);
+    top                 : 197px;
+    height              : 77px;
+    box-sizing          : border-box;
+    width               : 522px;
+    position            : absolute;
+    margin              : 0;
+    left                : 667px;
+    border-style        : solid;
+    border-width        : 1px;
+    border-color        : rgba(150, 150, 150, 1.0);
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .rectangle1 {
+    background-color    : rgba(255, 255, 255, 1.0);
+    top                 : 274px;
+    height              : 147px;
+    box-sizing          : border-box;
+    width               : 522px;
+    position            : absolute;
+    margin              : 0;
+    left                : 667px;
+    border-style        : solid;
+    border-width        : 1px;
+    border-color        : rgba(150, 150, 150, 1.0);
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .rectangle2 {
+    background-color    : rgba(255, 255, 255, 1.0);
+    top                 : 421px;
+    height              : 159px;
+    box-sizing          : border-box;
+    width               : 522px;
+    position            : absolute;
+    margin              : 0;
+    left                : 667px;
+    border-style        : solid;
+    border-width        : 1px;
+    border-color        : rgba(150, 150, 150, 1.0);
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .rectangle3 {
+    background-color    : rgba(234, 234, 234, 1.0);
+    top                 : 580px;
+    height              : 37px;
+    box-sizing          : border-box;
+    width               : 522px;
+    position            : absolute;
+    margin              : 0;
+    left                : 667px;
+    border-style        : solid;
+    border-width        : 1px;
+    border-color        : rgba(150, 150, 150, 1.0);
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .news {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 584px;
+    height              : auto;
+    width               : 78px;
+    position            : absolute;
+    margin              : 0;
+    left                : 683px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 25.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 30.0px;
+}
+.artboard .hint {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 156px;
+    height              : auto;
+    width               : 45px;
+    position            : absolute;
+    margin              : 0;
+    left                : 683px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 25.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 30.0px;
+}
+.artboard .stackedgroup1 {
+    display             : flex;
+    justify-content     : flex-start;
+    flex-direction      : column;
+    align-items         : center;
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 225px;
+    height              : auto;
+    width               : 45px;
+    position            : absolute;
+    margin              : 0;
+    left                : 445px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .companylocation {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 334px;
+    height              : auto;
+    width               : 101px;
+    position            : absolute;
+    margin              : 0;
+    left                : 742px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(96, 96, 96, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .rectangle4 {
+    background-color    : rgba(255, 254, 254, 1.0);
+    top                 : 617px;
+    height              : 296px;
+    box-sizing          : border-box;
+    width               : 522px;
+    position            : absolute;
+    overflow-y: scroll;
+    margin              : 0;
+    left                : 667px;
+    border-style        : solid;
+    border-width        : 1px;
+    border-color        : rgba(150, 150, 150, 1.0);
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .annualrev {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 359px;
+    height              : auto;
+    width               : 67px;
+    position            : absolute;
+    margin              : 0;
+    left                : 778px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(95, 95, 95, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .siccode {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 441px;
+    height              : auto;
+    width               : 55px;
+    position            : absolute;
+    margin              : 0;
+    left                : 787px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(96, 96, 96, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .yearfounded {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 482px;
+    height              : auto;
+    width               : 82px;
+    position            : absolute;
+    margin              : 0;
+    left                : 763px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(96, 96, 96, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .companysize {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 287px;
+    height              : auto;
+    width               : 213px;
+    position            : absolute;
+    margin              : 0;
+    left                : 759px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(96, 96, 96, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .industry {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 310px;
+    height              : auto;
+    width               : 47px;
+    position            : absolute;
+    margin              : 0;
+    left                : 795px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(93, 93, 93, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .naicscode {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 422px;
+    height              : auto;
+    width               : 75px;
+    position            : absolute;
+    margin              : 0;
+    left                : 770px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(96, 96, 96, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .companyfacebook {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 505px;
+    height              : auto;
+    width               : 108px;
+    position            : absolute;
+    margin              : 0;
+    left                : 732px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(96, 96, 96, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .companytwitter {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 529px;
+    height              : auto;
+    width               : 140px;
+    position            : absolute;
+    margin              : 0;
+    left                : 748px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(96, 96, 96, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .industrytags {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 550px;
+    height              : auto;
+    width               : 72px;
+    position            : absolute;
+    margin              : 0;
+    left                : 766px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(96, 96, 96, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .companydescription {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 383px;
+    height              : auto;
+    width               : 115px;
+    position            : absolute;
+    margin              : 0;
+    left                : 728px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(120, 117, 117, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .fyend {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 461px;
+    height              : auto;
+    width               : 100px;
+    position            : absolute;
+    margin              : 0;
+    left                : 798px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(96, 96, 96, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .hint1 {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 80px;
+    height              : auto;
+    width               : 146px;
+    position            : absolute;
+    margin              : 0;
+    left                : 656px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 25.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 30.0px;
+}
+
+.artboard .accounts {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 75px;
+    height              : auto;
+    width               : 162px;
+    position            : absolute;
+    margin              : 0;
+    left                : 62px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 25.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 30.0px;
+}
+.Create {
+    position: absolute;
+    top: 11%;
+    left: 40%;
+    z-index: +1;
+    font-family: "Helvetica", Helvetica, Arial, serif;
+    font-size: 15.0px;
+}
+.Cancel {
+    position: absolute;
+    top: 11%;
+    left: 40%;
+    z-index: +1;
+    font-family: "Helvetica", Helvetica, Arial, serif;
+    font-size: 15.0px;
+}
+
+.Cancel-Form{
+    position: absolute;
+    top: 28%;
+    left: 18%;
+    z-index: +1;
+    font-family: "Helvetica", Helvetica, Arial, serif;
+    font-size: 15.0px;
+}
+
+.artboard .line4 {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 912px;
+    height              : 2px;
+    width               : 1281px;
+    position            : absolute;
+    margin              : 0;
+    left                : -1px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .line5 {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 704px;
+    height              : 1px;
+    width               : 523px;
+    position            : absolute;
+    margin              : 0;
+    left                : 666px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+}
+.artboard .hintreactjsnodej {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 5px;
+    height              : auto;
+    width               : 428px;
+    position            : absolute;
+    margin              : 0;
+    left                : 429px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "ComicSansMS-Bold", Helvetica, Arial, serif;
+    font-size           : 30.0px;
+    color               : rgba(13, 129, 252, 1.0);
+    text-align          : left;
+    line-height         : 42.0px;
+}
+.artboard .mozilla {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 210px;
+    height              : auto;
+    width               : 88px;
+    position            : absolute;
+    margin              : 0;
+    left                : 880px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 18.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 22.0px;
+}
+.artboard .mozillafirefox {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 5%;
+    height              : auto;
+    width               : 454px;
+    position            : relative;
+    margin              : 0;
+    left                : 20px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica-Bold", Helvetica, Arial, serif;
+    font-size           : 15px;
+    color               : rgba(4, 119, 195, 1.0);
+    text-align          : left;
+    line-height         : 22.0px;
+}
+.artboard .mozillaorg {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 236px;
+    height              : auto;
+    width               : 454px;
+    position            : absolute;
+    margin              : 0;
+    left                : 880px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica-Bold", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(4, 119, 195, 1.0);
+    text-align          : left;
+    line-height         : 14.0px;
+}
+.artboard .a12hoursago {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 2%;
+    height              : auto;
+    width               : 117px;
+    position            : relative;
+    margin              : 0;
+    left                : 85%;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica-Bold", Helvetica, Arial, serif;
+    font-size           : 12.0px;
+    color               : rgba(107, 105, 105, 1.0);
+    text-align          : left;
+    line-height         : 19.0px;
+}
+.artboard .a2000 {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 287px;
+    height              : auto;
+    width               : 23px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+.artboard .internetsoftware {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 313px;
+    height              : auto;
+    width               : 128px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+.artboard .a650castrost300 {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 338px;
+    height              : auto;
+    width               : 234px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+.artboard .mozillaisafreeso {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 382px;
+    height              : auto;
+    width               : 236px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+.artboard .professionalscient {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 427px;
+    height              : auto;
+    width               : 230px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+.artboard .a20001 {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 364px;
+    height              : auto;
+    width               : 23px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+.artboard .a48 {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 445px;
+    height              : auto;
+    width               : 12px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+.artboard .a20002 {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 463px;
+    height              : auto;
+    width               : 23px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+.artboard .a1998 {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 483px;
+    height              : auto;
+    width               : 23px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+.artboard .wwwfacebookcommoz {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 506px;
+    height              : auto;
+    width               : 122px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+.artboard .wwwtwittercommozi {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 529px;
+    height              : auto;
+    width               : 107px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+.artboard .informationtechnolo {
+    background-color    : rgba(255,255,255,0.0);
+    top                 : 549px;
+    height              : auto;
+    width               : 239px;
+    position            : absolute;
+    margin              : 0;
+    left                : 883px;
+    -ms-transform       : rotate(0deg); /* IE 9 */
+    -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+    transform           : rotate(0deg);
+    font-family         : "Helvetica", Helvetica, Arial, serif;
+    font-size           : 10.0px;
+    color               : rgba(0, 0, 0, 1.0);
+    text-align          : left;
+    line-height         : 12.0px;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+    opacity             : 0;
+    display             : block;
+    -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+    -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+    -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+    animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+    opacity             : 1;
+    display             : block;
+    -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+    -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+    -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+    animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay  : 0;
+    animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+    0%
+
+    {
+        opacity: 0;
+    }
+
+
+    100%
+
+    {
+        opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+    0%
+
+    {
+        opacity: 0;
+    }
+
+
+    100%
+
+    {
+        opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+    0%
+
+    {
+        opacity: 0;
+    }
+
+
+    100%
+
+    {
+        opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+    0%
+
+    {
+        opacity: 0;
+    }
+
+
+    100%
+
+    {
+        opacity: 1;
+    }
+}
+.a{
+    width: 122px;
+    height:55px;
+    object-fit: scale-down;
+}
+.artboard .rectangle5 {
+    background-color: rgba(255,255,255,0.0);
+    top: 205px;
+    height: 59px;
+    /*box-sizing: border-box;*/
+    width: 122px;
+    position: absolute;
+    margin: 0;
+    left: 748px;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: rgba(150, 150, 150, 1.0);*/
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    object-fit: cover;
+}
+
+.rectangle4 .rectangle9 {
+    height: 122px;
+    object-fit: scale-down;
+    width: 55px;
+    position: absolute;
+    margin: 0;
+    left: 10px;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    object-fit: cover;
+    transform: rotate(0deg);
+}
+
+.b{
+    width: 122px;
+    height:30%;
+    object-fit: scale-down;
+}
