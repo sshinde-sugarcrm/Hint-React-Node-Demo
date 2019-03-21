@@ -76,46 +76,34 @@ export const doLogin = (payload) =>
         });
 
 
-export const doEnrich = (payload) =>
+export const doEnrich = async (payload) => {
+    const data = await fetch(companyURL + `?bean=%7B%22annual_revenue%22%3A%22%22%2C%22description%22%3A%22%22%2C%22account_facebook_handle%22%3A%22%22%2C%22account_fiscal_year_end%22%3A%22%22%2C%22account_founded_year%22%3A%22%22%2C%22account_industry%22%3A%22%22%2C%22account_industry_tags%22%3A%22%22%2C%22account_location%22%3A%22%22%2C%22account_logo%22%3A%22%22%2C%22account_naics_code_lbl%22%3A%22%22%2C%22account_size%22%3A%22%22%2C%22name%22%3A%22+${payload.name}+%22%2C%22sic_code%22%3A%22%22%2C%22tag%22%3A%5B%5D%2C%22website%22%3A%22%22%7D`, {
+        method: 'GET',
+        moduleName: 'Accounts',
+        username: 'admin',
+        instanceId: params,
+        subscriptionType: subscriptionType,
+        headers: {
+            ...headers,
+            'Content-Type': 'application/json',
+            'authToken': accessToken
+        },
+    });
+    const res = await data.json();
+    metricsToken = await res.metricsToken;
+    comp_data = await JSON.stringify(res.bean);
 
-
-            fetch(companyURL+`?bean=%7B%22annual_revenue%22%3A%22%22%2C%22description%22%3A%22%22%2C%22account_facebook_handle%22%3A%22%22%2C%22account_fiscal_year_end%22%3A%22%22%2C%22account_founded_year%22%3A%22%22%2C%22account_industry%22%3A%22%22%2C%22account_industry_tags%22%3A%22%22%2C%22account_location%22%3A%22%22%2C%22account_logo%22%3A%22%22%2C%22account_naics_code_lbl%22%3A%22%22%2C%22account_size%22%3A%22%22%2C%22name%22%3A%22+${payload.name}+%22%2C%22sic_code%22%3A%22%22%2C%22tag%22%3A%5B%5D%2C%22website%22%3A%22%22%7D`, {
-                method: 'GET',
-                moduleName: 'Accounts',
-                username: 'admin',
-                instanceId:params,
-                subscriptionType:subscriptionType,
-                headers: {
-                    ...headers,
-                    'Content-Type': 'application/json',
-                    'authToken':accessToken
-                },
-            }).then(response => response.json())
-                .then(response => {
-                    console.log("Response from the Data Enrich--->",response);
-                    metricsToken=response.metricsToken;
-                    comp_data=JSON.stringify(response.bean);
-
-
-                    fetch(NewsURL+`?companyInfo=%7B%22name%22%3A%22+${payload.name}+%22%2C%22domain%22%3A%22%22%7D`, {
-                        method: 'GET',
-                        moduleName: 'Accounts',
-                        metricsToken:metricsToken,
-                        headers: {
-                            ...headers,
-                            'Content-Type': 'application/json',
-                            'authToken':newToken
-                        },
-                    }).then(response => response.json())
-                        .then(response => {
-                            console.log("Response from the Enrich--->",response);
-                            news_data=JSON.stringify(response.news);
-                        });
-                    return [comp_data,news_data];
-                })
-
-        .catch(error => {
-            {console.log("accessToken-->",accessToken, "subscriptionType-->", subscriptionType);}
-            console.log("This is error");
-            return error;
-        });
+    const news = await fetch(NewsURL + `?companyInfo=%7B%22name%22%3A%22+${payload.name}+%22%2C%22domain%22%3A%22%22%7D`, {
+        method: 'GET',
+        moduleName: 'Accounts',
+        metricsToken: metricsToken,
+        headers: {
+            ...headers,
+            'Content-Type': 'application/json',
+            'authToken': newToken
+        },
+    });
+    const res1 = await news.json();
+    news_data = await JSON.stringify(res1.news);
+    return [comp_data, news_data];
+};
