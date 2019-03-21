@@ -53,9 +53,22 @@ export const doLogin = (payload) =>
                             console.log("Response from the DES token--->", response);
                             accessToken=response.accessToken;
                             subscriptionType=response.subscriptionType;
+
+                            fetch(`https://cors-anywhere.herokuapp.com/https://sw3.msqa.sugarcrm.com/rest/v11_4/stage2/token`, {
+                                method: 'POST',
+                                headers: {
+                                    ...headers,
+                                    'Content-Type': 'application/json',
+                                    'OAuth-Token':oAuth
+                                },
+                            }).then(response => response.json())
+                                .then(response => {
+                                    console.log("Response from the DES Enrich Token--->", response);
+                                    newToken=response.accessToken;
+                                })
                         })
                 });
-            return oAuth,accessToken,params;
+            return [oAuth,accessToken,params];
         })
         .catch(error => {
             console.log("This is error");
@@ -64,17 +77,7 @@ export const doLogin = (payload) =>
 
 
 export const doEnrich = (payload) =>
-    fetch(`https://cors-anywhere.herokuapp.com/https://sw3.msqa.sugarcrm.com/rest/v11_4/stage2/token`, {
-        method: 'POST',
-        headers: {
-            ...headers,
-            'Content-Type': 'application/json',
-            'OAuth-Token':oAuth
-        },
-    }).then(response => response.json())
-        .then(response => {
-            console.log("Response from the DES Enrich Token--->", response);
-            newToken=response.accessToken;
+
 
             fetch(companyURL+`?bean=%7B%22annual_revenue%22%3A%22%22%2C%22description%22%3A%22%22%2C%22account_facebook_handle%22%3A%22%22%2C%22account_fiscal_year_end%22%3A%22%22%2C%22account_founded_year%22%3A%22%22%2C%22account_industry%22%3A%22%22%2C%22account_industry_tags%22%3A%22%22%2C%22account_location%22%3A%22%22%2C%22account_logo%22%3A%22%22%2C%22account_naics_code_lbl%22%3A%22%22%2C%22account_size%22%3A%22%22%2C%22name%22%3A%22+${payload.name}+%22%2C%22sic_code%22%3A%22%22%2C%22tag%22%3A%5B%5D%2C%22website%22%3A%22%22%7D`, {
                 method: 'GET',
@@ -108,9 +111,9 @@ export const doEnrich = (payload) =>
                             console.log("Response from the Enrich--->",response);
                             news_data=JSON.stringify(response.news);
                         });
-                });
-            return [comp_data,news_data];
-        })
+                    return [comp_data,news_data];
+                })
+
         .catch(error => {
             {console.log("accessToken-->",accessToken, "subscriptionType-->", subscriptionType);}
             console.log("This is error");
