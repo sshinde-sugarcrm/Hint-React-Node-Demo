@@ -8,7 +8,10 @@ class Welcome extends Component {
         this.state = {
             toggle:false,
             name:"",
-            domain:""
+            domain:"",
+            news:"",
+            search:"",
+            flag:true
         };
     }
     renderDashlet(){
@@ -97,10 +100,23 @@ class Welcome extends Component {
         );
     }
 
-
+    filterNews = (e) => {
+        let searchString = e.toLowerCase();
+        let responseData = this.props.news_data;
+        if(searchString.length > 0){
+            this.setState({news:responseData.filter(l => {
+                    return l.title.toLowerCase().match(searchString);
+                })});
+        }else{
+         this.setState({news:this.props.news_data})
+        }
+    };
 
     render(){
         console.log(this.state.name);
+        if(this.props.news_data!=null&& this.props.news_data.length!==0 && this.state.flag===true){
+            this.setState({news:this.props.news_data,flag:false})
+        }
         return(
             <div>
                 {this.renderToggle()}
@@ -122,11 +138,17 @@ class Welcome extends Component {
                         </div>
                         <div className="rectangle3">
                         </div>
+                        <input type="text" className="search" placeholder="Search"
+                               onChange={(event) => {
+                                   this.filterNews(event.target.value);
+                               }}
+                        />
 
                         <div className="rectangle4">
                                 {(() => {
-                                    if(this.props.news_data!=null&&this.props.news_data.length!==0){
-                                        return(<div>{this.props.news_data.map(row => {
+                                    if(this.state.news!=null&& this.state.news.length!==0){
+                                        // {console.log("Inside News-->", this.state.news);}
+                                        return(<div>{this.state.news.map(row => {
                                             return(
                                                 <div>
                                                     <div className="rectangle9"><img className="b" src={row.photo_url}  alt={row.publisher}/></div>
@@ -139,7 +161,8 @@ class Welcome extends Component {
                                             )
                                         })
                                         };
-                                        </div>)
+                                        </div>
+                                        )
                                     }
                                     else{
                                         return(<div></div>);
