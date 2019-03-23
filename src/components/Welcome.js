@@ -49,24 +49,24 @@ class Welcome extends Component {
 
     limitWords(textToLimit, wordLimit)
     {
-        var finalText = "";
-
-        var text2 = textToLimit.replace(/\s+/g,'');
-
-        var text3 = text2.split(' ');
-
-        var numberOfWords = text3.length;
-
-        var i=0;
-
-        if(numberOfWords > wordLimit)
-        {
-            for(i=0; i< wordLimit; i++)
-                finalText = finalText+" "+ text3[i]+" ";
-
-            return finalText+"...";
-        }
-        else return textToLimit;
+        // var finalText = "";
+        //
+        // var text2 = textToLimit.replace(/\s+/g,'');
+        //
+        // var text3 = text2.split(' ');
+        //
+        // var numberOfWords = text3.length;
+        //
+        // var i=0;
+        //
+        // if(numberOfWords > wordLimit)
+        // {
+        //     for(i=0; i< wordLimit; i++)
+        //         finalText = finalText+" "+ text3[i]+" ";
+        //
+        //     return finalText+"...";
+        // }
+        // else return textToLimit;
     }
 
     renderToggle(){
@@ -91,9 +91,9 @@ class Welcome extends Component {
                                }}/>
                     </FormGroup>
                     &nbsp;
-                    <Button color="success" onClick={() => {
-                        // this.renderSearch();
-                        this.props.enrich(this.state);
+                    <Button color="success" onClick={ () => {
+                           this.props.enrich(this.state);
+                           this.setState({search:"", flag:true});
                     }}> Submit</Button>
                 </Form></div>
             </div>
@@ -106,7 +106,7 @@ class Welcome extends Component {
         if(searchString.length > 0){
             this.setState({news:responseData.filter(l => {
                     return l.title.toLowerCase().match(searchString);
-                })});
+                }), flag:false});
         }else{
          this.setState({news:this.props.news_data})
         }
@@ -114,9 +114,10 @@ class Welcome extends Component {
 
     render(){
         console.log(this.state.name);
-        if(this.props.news_data!=null&& this.props.news_data.length!==0 && this.state.flag===true){
-            this.setState({news:this.props.news_data,flag:false})
-        }
+    if(this.props.news_data && this.state.flag && this.state.news!==this.props.news_data){
+            this.filterNews("");
+                    this.setState({flag:false})
+            }
         return(
             <div>
                 {this.renderToggle()}
