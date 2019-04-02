@@ -1,13 +1,13 @@
-const api = process.env.REACT_APP_CONTACTS_API_URL || 'https://sw3.msqa.sugarcrm.com/rest/v11_4/oauth2/token?platform=base';
+const api = process.env.REACT_APP_CONTACTS_API_URL || 'https://sw101.msqa.sugarcrm.com/rest/v11_4/oauth2/token?platform=base';
 
 const headers = {
     'Accept': 'application/json',
     'Access-Control-Allow-Origin':'*'
 };
 var oAuth="";
-var params_URL="https://cors-anywhere.herokuapp.com/https://sw3.msqa.sugarcrm.com/rest/v11_4/stage2/params";
+var params_URL="https://cors-anywhere.herokuapp.com/https://sw101.msqa.sugarcrm.com/rest/v11_4/stage2/params";
 var params="";
-var tokenURL="https://cors-anywhere.herokuapp.com/https://sw3.msqa.sugarcrm.com/rest/v11_4/stage2/token";
+var tokenURL="https://cors-anywhere.herokuapp.com/https://sw101.msqa.sugarcrm.com/rest/v11_4/stage2/token";
 var accessToken="";
 var NewsURL="https://cors-anywhere.herokuapp.com/https://data-enrichment.dev.service.sugarcrm.com/hint/data-enrichment/v1/company-news";
 var companyURL="https://cors-anywhere.herokuapp.com/https://data-enrichment.dev.service.sugarcrm.com/hint/data-enrichment/v1/enrich-account-bean";
@@ -54,7 +54,7 @@ export const doLogin = (payload) =>
                             accessToken=response.accessToken;
                             subscriptionType=response.subscriptionType;
 
-                            fetch(`https://cors-anywhere.herokuapp.com/https://sw3.msqa.sugarcrm.com/rest/v11_4/stage2/token`, {
+                            fetch(`https://cors-anywhere.herokuapp.com/https://sw101.msqa.sugarcrm.com/rest/v11_4/stage2/token`, {
                                 method: 'POST',
                                 headers: {
                                     ...headers,
